@@ -1,0 +1,60 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.banner{
+    text-align: center;
+    background-color: #FDD11E;
+    height: 400px;
+}
+.banner p{
+    margin: 0px 0 0 0;
+    padding-top: 50px;
+    color: white;
+}
+.banner .circle p{
+    margin: 0;
+}
+.circle{
+    height: 50px;
+    width: 50px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 20px auto;
+    position: relative;
+}
+.circle::before {
+    content: '.';
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -42%);
+}
+.circle::after {
+    content: '.';
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    bottom: 24%;
+    left: 50%;
+    transform: translate(-50%, -24%);
+}
+.circle span{
+    position: relative;
+}
+.circle span::after {
+    content: ')';
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    top: 11px;
+    left: 7px;
+}
+.path {
+    clip-path: polygon(0 0, 38% 0, 53% 54%, 66% 0, 100% 0, 100% 15%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
+    background-color: red;
+    height: 300px;
+    margin-top: -161px;
+}
